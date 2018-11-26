@@ -2,3 +2,5 @@ let forecast = {"coord":{"lon":-122.09,"lat":37.39},"weather":[{"id":500,"main":
 
 const weatherWrapper = document.getElementById("forecast-goes-here");
 const currentWeather = document.createTextNode(forecast.weather[0].description);
+
+weatherWrapper.appendChild(currentWeather);
